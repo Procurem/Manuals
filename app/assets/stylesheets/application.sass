@@ -10,6 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+ * Since we are using sass-rails, you need to use @import instead of require to pull in the component
+ * stylesheets.  You can organize them by view directory (or generic equivalent) and pull them in via
+ * glob statement (*) and sass-rails will find and import them correctly.
  */
+
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets"
+@import "bootstrap"

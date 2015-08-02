@@ -63,6 +63,7 @@ end
 group :development do
   gem 'better_errors', '~> 2.1'
   gem 'binding_of_caller', '~> 0.7'
+  gem 'regressor', '~> 0.4.2'
   gem 'pronto', '~> 0.4'
   gem 'pronto-brakeman', require: false
   gem 'pronto-coffeelint', require: false
@@ -95,7 +96,6 @@ gem 'country_select'
 gem 'email_validator', '~> 1.6'
 gem 'mini_magick', '~> 4.2'
 gem 'carrierwave', '~> 0.10'
-gem 'grim', '~> 1.2'
 gem 'paper_trail', '~> 4.0'
 gem 'sidekiq', '~> 3.4'
 
