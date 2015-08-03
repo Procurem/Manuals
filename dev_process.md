@@ -22,9 +22,10 @@ $ git push origin new-feature-branch
 * Goto repository page
 * click '# branches' where it is in line with commits, branch, releases, contributor
 * click the button which says "New pull request" to the right
+* use the dropdown and change 'master' to 'staging' branch
 * wait for comments and code review
 
 Another party must merge all branches you dev
 
 Once this moves to master, Codeship.io will run all tests and environment checks.
-If these checks pass, it will push to production, if not it will comment in pull request.
+If these checks pass, it will push to staging server, if not it will comment in pull request.
