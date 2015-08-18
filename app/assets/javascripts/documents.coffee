@@ -22,9 +22,11 @@ options =
     'underline'
     'createlink'
   ]
+
 # create editor
 pen = window.pen = new Pen(options)
 pen.focus()
+
 # toggle editor mode
 document.querySelector('#mode').addEventListener 'click', ->
   text = @textContent
@@ -35,11 +37,13 @@ document.querySelector('#mode').addEventListener 'click', ->
     @classList.add 'disabled'
     pen.destroy()
   return
+
 # export content as markdown
 document.querySelector('#tomd').addEventListener 'click', ->
   text = pen.toMd()
   document.body.innerHTML = '<a href="javascript:location.reload()">&larr;back to editor</a><br><br><pre>' + text + '</pre>'
   return
+
 # toggle editor mode
 document.querySelector('#hinted').addEventListener 'click', ->
   `var pen`

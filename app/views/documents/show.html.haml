@@ -1,10 +1,8 @@
 %p#notice= notice
 
 %p
-  %b Title:
   = raw @document.title
 %p
-  %b Content:
   = raw @document.content
 
 = link_to 'Edit', edit_document_path(@document)
