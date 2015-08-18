@@ -2,10 +2,10 @@
 
 %p
   %b Title:
-  = @document.title
+  = raw @document.title
 %p
   %b Content:
-  = @document.content
+  = raw @document.content
 
 = link_to 'Edit', edit_document_path(@document)
 \|

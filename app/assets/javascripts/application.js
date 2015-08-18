@@ -15,4 +15,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require cocoon
+//= require pen
+//= require markdown
 //= require_tree .
