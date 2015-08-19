@@ -25,7 +25,8 @@ options =
 
 # create editor
 pen = window.pen = new Pen(options)
-pen.focus()
+#pen.focus()
+pen.destroy()
 
 # toggle editor mode
 document.querySelector('#mode').addEventListener 'click', ->

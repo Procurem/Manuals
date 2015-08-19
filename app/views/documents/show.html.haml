@@ -1,10 +1,13 @@
 %p#notice= notice
 
-%p
+%p#docu-title
   = raw @document.title
-%p
+%p#docu-content
   = raw @document.content
+
 
 = link_to 'Edit', edit_document_path(@document)
 \|
 = link_to 'Back', documents_path
+
+
